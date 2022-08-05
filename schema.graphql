@@ -12,5 +12,5 @@ type Query {
 }
 
 type Subscription {
-  test(id: String!): test @aws_subscribe(mutations: ["test"])
+  test(id: String!): test
 }
