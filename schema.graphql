@@ -1,0 +1,16 @@
+type test {
+  id: ID!
+  name: string
+}
+
+type Mutation {
+  test(id: String!): test!
+}
+
+type Query {
+  test(id: String!): test
+}
+
+type Subscription {
+  test(id: String!): test @aws_subscribe(mutations: ["test"])
+}
